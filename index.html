@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Player de Música</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="music-player">
+        
+        <figure class="album-cover">
+            <img src="planos.png" alt="Capa do Álbum com textura de vinil">
+        </figure>
+
+        <section class="track-info">
+            <h1 class="track-title">Planos Impossíveis</h1>
+            <p class="track-artist">Jads & Jadson</p>
+        </section>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="time-info">
+                <span>01:25</span>
+                <span>03:40</span>
+            </div>
+        </div>
+
+        <nav class="controls" aria-label="Controles de reprodução">
+            <button class="btn-control" aria-label="Anterior">&#9198;</button>
+            <button class="btn-control btn-play" aria-label="Tocar/Pausar">&#9208;</button>
+            <button class="btn-control" aria-label="Próxima">&#9197;</button>
+        </nav>
+
+        <hr style="border-color: #404040; margin: 15px 0;">
+
+        <audio class="native-audio" controls>
+            <source src="sua-musica-aqui.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+    </main>
+
+</body>
+</html>
