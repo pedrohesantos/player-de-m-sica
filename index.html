@@ -3,47 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Player de Música</title>
-    
-    <link rel="stylesheet" href="styles.css">
+    <title>PH Player de Música - Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <main class="music-player">
+    <header class="page-header">
+        <h1>Tocando Agora: Planos Impossíveis</h1>
+    </header>
+
+    <div class="content-wrapper">
         
-        <figure class="album-cover">
-            <img src="planos.png" alt="Capa do Álbum com textura de vinil">
-        </figure>
+        <main class="music-player">
+            <figure class="album-cover">
+                <img src="planos.png" alt="Capa do Álbum">
+            </figure>
 
-        <section class="track-info">
-            <h1 class="track-title">Planos Impossíveis</h1>
-            <p class="track-artist">Jads & Jadson</p>
-        </section>
+            <section class="track-info">
+                <h2 class="track-title">Planos Impossíveis</h2>
+                <p class="track-artist">Jads & Jadson</p>
+            </section>
 
-        <div class="progress-container">
-            <div class="progress-bar">
-                <div class="progress-fill"></div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="time-info">
+                    <span>01:25</span>
+                    <span>03:40</span>
+                </div>
             </div>
-            <div class="time-info">
-                <span>01:25</span>
-                <span>03:40</span>
-            </div>
-        </div>
 
-        <nav class="controls" aria-label="Controles de reprodução">
-            <button class="btn-control" aria-label="Anterior">&#9198;</button>
-            <button class="btn-control btn-play" aria-label="Tocar/Pausar">&#9208;</button>
-            <button class="btn-control" aria-label="Próxima">&#9197;</button>
-        </nav>
+            <nav class="controls" aria-label="Controles de reprodução">
+                <button class="btn-control" aria-label="Anterior">&#9198;</button>
+                
+                <button class="btn-control btn-play" aria-label="Tocar/Pausar">
+                    <img src="https://i.gifer.com/origin/12/12b2db841f92eef8596b447a16568db9_w200.gif" alt="GIF Animado Tocando" class="playing-gif">
+                </button>
+                
+                <button class="btn-control" aria-label="Próxima">&#9197;</button>
+            </nav>
 
-        <hr style="border-color: #404040; margin: 15px 0;">
+            <audio class="native-audio" controls>
+                <source src="sua-musica-aqui.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </main>
 
-        <audio class="native-audio" controls>
-            <source src="sua-musica-aqui.mp3" type="audio/mpeg">
-            Seu navegador não suporta o elemento de áudio.
-        </audio>
+        <aside class="playlist">
+            <h3 class="playlist-title">Próximas Faixas</h3>
+            <ul class="track-list">
+                <li class="track-item active">
+                    <span class="track-number">1</span>
+                    <div class="track-details">
+                        <span class="list-title">That's My Way</span>
+                        <span class="list-artist">Edi Rock</span>
+                    </div>
+                    <span class="track-duration">05:39</span>
+                </li>
+                <li class="track-item">
+                    <span class="track-number">2</span>
+                    <div class="track-details">
+                        <span class="list-title">Sarà Perché Ti Amo</span>
+                        <span class="list-artist">Ricchi e Poveri</span>
+                    </div>
+                    <span class="track-duration">03:11</span>
+                </li>
+                <li class="track-item">
+                    <span class="track-number">3</span>
+                    <div class="track-details">
+                        <span class="list-title">Poesia Acústica #2 - Sobre Nós</span>
+                        <span class="list-artist">Pineapple</span>
+                    </div>
+                    <span class="track-duration">07:51</span>
+                </li>
+                <li class="track-item">
+                    <span class="track-number">4</span>
+                    <div class="track-details">
+                        <span class="list-title">Vidro Fumê</span>
+                        <span class="list-artist">Bruno & Marrone</span>
+                    </div>
+                    <span class="track-duration">03:30</span>
+                </li>
+            </ul>
+        </aside>
 
-    </main>
+    </div>
+
+    <footer class="page-footer">
+        <p>&copy; 2026 Meu Player de Música. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
-</html>
+</html>V
